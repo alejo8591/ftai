@@ -1,0 +1,8 @@
+<div *ngIf="reward">
+    <h2>{{reward.name}} details!</h2>
+    <div><label>id: </label>{{reward.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="reward.name" placeholder="name"/>
+    </div>
+</div>

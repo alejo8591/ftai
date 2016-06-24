@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<ul>
+    <li *ngFor="let reward of rewards"
+        [class.pepito]="reward === selected"
+        (click)="onSelect(reward)">
+        <span>{{reward.id}}</span> {{reward.name}}
+    </li>
+</ul>
+<div *ngIf="selected">
+    <h2>{{selected.name}} details!</h2>
+    <div><label>id: </label>{{selected.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="selected.name" placeholder="name"/>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<h2>{{ reward.name }} details!</h2>
+<label for="id">id</label> <span>{{ reward.id }}</span>
+<label for="name">name</label> <span>{{ reward.name }}</span>
+<label for="description">description</label> <span>{{ reward.description }}</span>
+<label for="points">points</label> <span>{{ reward.points }}</span>
+
+<div>
+    <hr />
+    <label>name: </label>
+    <input [(ngModel)]="reward.name" placeholder="name">
+    <label>Description: </label>
+    <textarea [(ngModel)]="reward.description" placeholder="description"></textarea>
+    <label>Points: </label>
+    <input [(ngModel)]="reward.points" placeholder="points">
+</div>

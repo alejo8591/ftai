@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let reward of rewards"
+        (click)="onSelect(reward)">
+        <span>{{reward.id}}</span> {{reward.name}}
+    </li>
+</ul>
