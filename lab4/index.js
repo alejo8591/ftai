@@ -7,4 +7,3 @@ function greeter(person) {
 }
 var user = ["1", "32"];
 console.log(greeter(user));
-//# sourceMappingURL=index.js.map
